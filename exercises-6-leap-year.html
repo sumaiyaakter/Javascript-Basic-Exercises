@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leap Year</title>
+</head>
+  <!-- 6. Write a JavaScript program to determine whether a given year is a leap year in the Gregorian calendar -->
+<body>
+  <div>
+    <form action="#">
+      <label for="year">Enter the year</label>
+      <input type="text" id="year">
+      <button onclick="checkLeapYear()">Click</button>
+      <h1><span id="display"></span></h1>
+    </form>
+  </div>
+
+
+  <script>
+    function checkLeapYear() {
+      //define variables
+      var year;
+
+      // get the entered year from the text box
+      year = parseInt(document.getElementById("year").value);
+
+      if ((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0)) {
+        document.getElementById("display").innerHTML = year + " is leap year";
+      } else {
+        document.getElementById("display").innerHTML = year + " is not leap year";
+      }
+    }
+  </script>
+</body>
+
+</html>

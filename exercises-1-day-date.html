@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day-Date</title>
+</head>
+<body>
+
+  <!-- Write a JavaScript program to display the current day and time in the following format  -->
+  <script>
+    var date = new Date();
+    var today = date.getDay();
+    var dayList = ["Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
+    document.write(dayList[today] + "<br/>");
+
+    var hour = date.getHours();
+    var minute = date.getMinutes();
+    var second = date.getSeconds();
+    var prepend = (hour >= 12)? " AM" : "PM";
+    if(hour == 0 && prepend == 'PM'){
+      if(minute == 0 && second == 0){
+        hour = 12;
+      }
+    } else{
+      prepend = " PM ";
+    }
+
+    if(hour == 0 && prepend == 'AM'){
+      if(minute == 0 && second == 0){
+        hour = 12;
+      }
+    } else{
+      prepend = " AM ";
+    }
+
+    document.write(hour + ":" + minute + ":" + second + prepend);
+  </script>
+</body>
+</html>
