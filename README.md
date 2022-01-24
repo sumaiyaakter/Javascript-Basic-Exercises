@@ -1,1 +1,1 @@
-"# Javascript-Basic-Exercises" 
+# Javascript Basic Exercises
