@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day-Date</title>
+</head>
+<body>
+
+  <!-- 21. Write a JavaScript program to create a new string adding "Ba" in front of a given string. If the given string begins with "Ba" then return the original string.  -->
+  <script>
+    function check_string(string){
+      if(string == null || string == undefined || string.substring(0,2) == "Ba" ||  string.substring(0,2) == "ba"){
+        return string;
+      } else{
+        return "Ba"+string;
+      }
+    }
+
+    document.write(check_string("Bangladesh" + "<br/>"))
+    document.write("Total length is" + check_string("Bangladesh").length)
+    
+  </script>
+</body>
+</html>

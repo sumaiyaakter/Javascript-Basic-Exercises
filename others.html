@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Day-Date</title>
 </head>
+
 <body>
 
   <form action="">
@@ -16,14 +18,25 @@
 
   <!--   -->
   <script>
-    function Submit(){
+    function Submit() {
       var input = document.getElementById("value").value;
-      
+
       // clear input field on focus
       // document.getElementById("value").value = "";
 
       document.getElementById("display").innerHTML = input;
     }
+
+
+    // program to include JS file into another JS file
+    const message = 'hello world';
+    const number = 10;
+    function multiplyNumbers(a, b) {
+      return a * b;
+    }
+   document.write (multiplyNumbers(10,20));
+
   </script>
 </body>
+
 </html>

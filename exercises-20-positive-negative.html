@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Positive Negative value check</title>
+</head>
+<body>
+
+  <!-- 20. Write a JavaScript program to check from two given integers, whether one is positive and another one is negative.   -->
+  <script>
+    var num = -3;
+
+    if( num > 0){
+      document.write("It's positive");
+    } else{
+      document.write("It's Negative");
+    }
+    document.write("<br/>");
+
+
+    const a = prompt("Enter the First number");
+    const b = prompt("Enter the second number");
+    function positiveNegative(x,y){
+      if( x > 0 && y > 0 ){
+        return "It's positive";
+      } else {
+        return "It's Negative";
+      }
+    }
+
+    document.write(positiveNegative(a, b))
+
+  </script>
+</body>
+</html>

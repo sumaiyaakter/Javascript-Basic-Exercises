@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>String added front and back</title>
+</head>
+<body>
+
+  <!-- 24. Write a JavaScript program to create a new string from a given string with the first character of the given string added at the front and back.  -->
+  <script>
+    function front_back(string){
+      const first = string.substring(0,2);
+      return first + string + first;
+    }
+    document.write(front_back("a"))
+
+
+  </script>
+</body>
+</html>

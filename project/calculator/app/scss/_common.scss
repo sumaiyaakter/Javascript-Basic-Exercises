@@ -1,0 +1,25 @@
+body {
+  background-color: $body-color;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: lighten($color: $color-primary, $amount: 10);
+  color: $white;
+}
+
+tr {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+th {
+  position: relative;
+}
+
+th span {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
