@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sticky-header</title>
+
+  <style>
+    body {
+      height: 200vh;
+      margin: 0;
+    }
+
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    header.sticky {
+      background: black;
+      position: sticky;
+      top: 0;
+    }
+
+    header {
+      transition: .3s;
+      padding: 10px 0;
+    }
+
+    header.sticky li a {
+      color: white;
+    }
+
+    header li a {
+      text-decoration: none;
+      font-size: 19px;
+      text-transform: capitalize;
+    }
+
+    header li {
+      list-style: none;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+
+    <ul>
+      <li><a href="#">home</a></li>
+      <li><a href="#">about</a></li>
+      <li><a href="#">services</a></li>
+      <li><a href="#">contact</a></li>
+    </ul>
+  </header>
+
+
+  <script>
+    document.addEventListener("scroll", () => {
+      const header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0);
+    })
+  </script>
+</body>
+
+</html>
